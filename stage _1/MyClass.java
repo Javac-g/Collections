@@ -2,7 +2,13 @@ import java.util.*;
 
 
 public class MyClass {
-    public static void printAll(Iterable<?> iterable){
+    public static void printAllOne(Iterable<?> iterable){
+       for(Object object : iterable){
+           System.out.println(object);
+       }
+    }
+    public
+    public static void printAllTwo(Iterable<?> iterable){
        Iterator<?> iterator = iterable.iterator();
        while(iterator.hasNext()){
            Object object = iterator.next();
@@ -18,6 +24,6 @@ public class MyClass {
       list.add(900);
       list.add(921);
       
-      printAll(list);
+      printAllOne(list);
     }
 }
